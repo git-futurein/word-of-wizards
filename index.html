@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="header-navbar">
           <ul class="navbar-nav text-center ml-auto mr-auto">
             <li class="nav-item wow bounceInDown" data-wow-delay="0.2s">
-              <a class="nav-link  position-relative active" href="#token">Token</a>
+              <a class="nav-link active  position-relative active" href="#token">Token</a>
             </li>
             <li class="nav-item wow bounceInDown" data-wow-delay="0.4s">
               <a class="nav-link  position-relative" href="#road-map">Roadmap</a>
@@ -83,8 +83,21 @@
       </div>
     </div>
   </section>
+  <div id="banner-bottom"></div>
   <!-- banner part end -->
 
+
+  <script>
+    let text = "";
+
+    for (let i = 0; i < 800; i++) {
+      text += `<div class="circle-container">
+      <div class="circle"></div>
+    </div>`;
+    }
+
+    document.getElementById("banner-bottom").innerHTML = text;
+  </script>
   <!-- metaverse start -->
   <section id="metaverse">
     <div class="container">
@@ -297,7 +310,7 @@
   <script src="./assets/plugins/slick-slider/js/slick.min.js"></script>
   <script src="./assets/plugins/bootstrap/bootstrap.min.js"></script>
   <!-- <script src="assets/plugins/fontawesome/js/all.min.js"></script> -->
-  <!-- <script src="./assets/js/snow.js"></script> -->
+  <script src="./assets/js/snow.js"></script>
 
   <script src="./assets/plugins/slick-slider/js/slick.js"></script>
   <!-- <script src="./assets/plugins/wow/js/wow.min.js" defer></script> -->

@@ -10,7 +10,8 @@ header{
               padding: 0 15px;
               text-transform: capitalize;
               // padding-top: 15px;
-                line-height: 40px;
+              border-top: 1px solid rgba(0, 0, 0, 0);
+                line-height: 78px;
                 position: relative;
                 &:after{
                   position: absolute;
@@ -28,10 +29,26 @@ header{
                 &:hover::after{
                   height: 100%;
                 }
-                // &:hover{
-                //   @include trans(.2s ,.3s);
-                //     color: #D7BF01;   
-                // }
+                &:hover{
+                  @include trans(.2s ,.3s);
+                  border-top: 1px solid $maincol;
+                }
+            }
+            .active{
+              border-top: 1px solid $maincol;
+              &:after{
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 50%;
+                height: 100%;
+                width: 100%;
+                transform: translateX(-50%);
+                background: #552f4d78;
+                background-image: url('../images/title-spider.png');
+                z-index: 2;
+                @include trans(.2s ,0);
+              }
             }
             .m-btn{
               margin-top: 20px;
