@@ -9,10 +9,12 @@
         padding: 40px 35px;
         margin-bottom: -60px;
         border-radius: 20px;
+        border: 1px solid transparent;
         @include trans(.2s, 0s);
         &:hover{
             border-radius: 20px;
             box-shadow: -2px -3px 20px $maincol;
+            border: 1px solid #f7ea66;
         }
         h3{
             padding-top: 20px;

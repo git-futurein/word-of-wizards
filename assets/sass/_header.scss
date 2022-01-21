@@ -1,4 +1,5 @@
 header{
+<<<<<<< HEAD
   .navbar-nav{
       .nav-item{
           .nav-link{
@@ -13,12 +14,55 @@ header{
             border-top: 1px solid rgba(0, 0, 0, 0);
               line-height: 78px;
               position: relative;
+=======
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+              font-family: "Berkshire Swash";
+              font-size: 16px;
+              color: #fff;
+              font-weight: 400;
+              letter-spacing: 1px;
+              padding: 0 15px;
+              text-transform: capitalize;
+              // padding-top: 15px;
+              border-top: 1px solid rgba(0, 0, 0, 0);
+                line-height: 78px;
+                position: relative;
+                &:after{
+                  position: absolute;
+                  content: '';
+                  top: 0;
+                  left: 50%;
+                  height: 0%;
+                  width: 100%;
+                  transform: translateX(-50%);
+                  background: #552f4d78;
+                  background-image: url('../images/title-spider.png');
+                  z-index: 2;
+                  @include trans(.2s ,0);
+                }
+                &:hover::after{
+                  height: 100%;
+                }
+                &:hover{
+                  @include trans(.2s ,.3s);
+                  border-top: 1px solid $maincol;
+                }
+            }
+            .active{
+              border-top: 1px solid $maincol;
+>>>>>>> b08363a9533b1f0ebda90ed5c5fa0579caaaf3d3
               &:after{
                 position: absolute;
                 content: '';
                 top: 0;
                 left: 50%;
+<<<<<<< HEAD
                 height: 0%;
+=======
+                height: 100%;
+>>>>>>> b08363a9533b1f0ebda90ed5c5fa0579caaaf3d3
                 width: 100%;
                 transform: translateX(-50%);
                 background: #552f4d78;
@@ -26,6 +70,7 @@ header{
                 z-index: 2;
                 @include trans(.2s ,0);
               }
+<<<<<<< HEAD
               &:hover::after{
                 height: 100%;
               }
@@ -48,6 +93,8 @@ header{
               background-image: url('../images/title-spider.png');
               z-index: 2;
               @include trans(.2s ,0);
+=======
+>>>>>>> b08363a9533b1f0ebda90ed5c5fa0579caaaf3d3
             }
           }
           .m-btn{
