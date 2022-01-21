@@ -2,20 +2,18 @@
 #banner{
     padding-top: 40px;
     .banner-test{
-        padding-top: 120px;
+        padding-top: 70px;
         text-align: center;
         h1{
             font-size: 60px;
             font-weight: 400;
             color: $yellow;
             font-family: "Berkshire Swash";
-            line-height: 24px;
-            padding-bottom: 50px;
+            line-height: 70px;
             span{
                 color:$white;
                 display: block;
                 font-size: 20px;
-                padding-bottom: 30px;
             }
         }
     }
